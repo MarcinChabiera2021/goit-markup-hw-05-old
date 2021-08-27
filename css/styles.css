@@ -418,17 +418,18 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
-  background: var(--background-color-sec);
+  background-color: var(--background-color-sec);
   margin-left: 8px;
   padding: 6px 22px;
+  transition: background-color box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn-filter:hover,
 .modal-btn-filter:active {
   color: #ffffff;
-  background: var(--main-color);
+  background-color: var(--main-color);
   box-shadow: 0px 3px 1px rgba(117, 78, 78, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 /* project card */
@@ -440,7 +441,7 @@ img {
 .project-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list {
