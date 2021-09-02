@@ -23,9 +23,11 @@
     <!-- Header -->
     <!-- hw5 -->
 
-    <header class="header ">
+    <header class="header">
       <div class="container">
-        <a class="logo-link link" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+        <a class="logo-link link" href="./index.html"
+          ><span class="logo-web">Web</span>Studio</a
+        >
 
         <nav class="navi">
           <ul class="navi-list list">
@@ -36,7 +38,9 @@
             </li>
 
             <li class="navi-list-item">
-              <a class="navi-list-link link" href="./portfolio.html">Portfolio</a>
+              <a class="navi-list-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
 
             <li class="navi-list-item">
@@ -78,7 +82,9 @@
             EFEKTYWNE ROZWIĄZANIA <br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button class="modal-btn" type="button">Zamów usługe</button>
+          <button class="modal-btn" type="button" data-modal-open>
+            Zamów usługe
+          </button>
         </div>
       </section>
 
@@ -154,6 +160,7 @@
                 width="370"
                 height="294"
               />
+              <h4 class="about-text">APLIKACJE KOMPUTEROWE</h4>
             </li>
             <li class="about-item">
               <img
@@ -163,6 +170,7 @@
                 width="370"
                 height="294"
               />
+              <h4 class="about-text">APLIKACJE MOBILNE</h4>
             </li>
             <li class="about-item">
               <img
@@ -172,6 +180,7 @@
                 width="370"
                 height="294"
               />
+              <h4 class="about-text">ROZWIĄZANIA GRAFICZNE</h4>
             </li>
           </ul>
         </div>
@@ -491,5 +500,21 @@
         </div>
       </div>
     </footer>
+
+    <!-- okno modalne -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn-close" data-modal-close>
+          <svg class="close-black">
+            <use href="../images/svg/icon.svg#icon-close-black" width="11" height="11"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+     <script src="./js/modal.js"></script>
+
+
   </body>
 </html>
